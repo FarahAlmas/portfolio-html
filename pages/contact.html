@@ -1,0 +1,122 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color:  #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            flex-wrap: wrap;
+        }
+        .form-container, .info-container {
+            width: 45%;
+            margin: 10px 0;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #1a1a1af4;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            color: #ffffff;
+            font-size: 16px;
+        }
+        .form-container textarea {
+            height: 100px;
+            resize: none;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            margin-top: 20px;
+            background: linear-gradient(90deg, rgb(217, 0, 255) 0%, rgba(0, 204, 255, 1) 100%);
+            border: none;
+            color: #000000;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .info-container h1 {
+            font-size: 48px;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+        }
+        .info-container h1::before {
+            content: 'Contact';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #9d00ff;
+            z-index: -1;
+            transform: translate(5px, 5px);
+        }
+        .info-container h1::after {
+            content: 'Us';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            color: #00ccff;
+            z-index: -1;
+            transform: translate(-5px, -5px);
+        }
+        .info-container p {
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .form-container, .info-container {
+                width: 100%;
+            }
+            .info-container h1 {
+                text-align: center;
+            }
+            .info-container p {
+                text-align: center;
+            }
+        }
+        button{
+            background-color: #9d00ff;
+            border: 2px solid #00e1ff;
+            border-radius: 5px;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Share your thoughts"></textarea>
+            <button>SHARE YOUR FEEDBACK</button>
+        </div>
+        <div class="info-container">
+            <h1>Contact Us</h1>
+            <p>It is very important for us to keep in touch with you, so we are always ready to answer any question that interests you. Shoot!</p>
+        </div>
+        <button><a href="/index.html">Back to Home</a></button>
+    </div>
+</body>
+</html>

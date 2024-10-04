@@ -1,0 +1,227 @@
+<html></html>
+ <head>
+  <title>
+   project
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #1f7b66;
+            border-bottom: 1px solid #09775d;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(12, 92, 72, 0.1);
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo img {
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .navbar .logo span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar .menu li {
+            margin-left: 20px;
+        }
+        .navbar .menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        .navbar .menu li a.active {
+            background-color: #d9534f;
+            color: #fff;
+            border-radius: 4px;
+        }
+        .hero {
+            background: url('../pic-folder/project-page.png') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .content .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+        }
+        .content .col {
+            flex: 1;
+            padding: 10px;
+            min-width: 300px;
+        }
+        .content .col img {
+            width: 100%;
+            border-radius: 4px;
+        }
+        .content .col h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .content .col p {
+            font-size: 16px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        ul{
+          list-style: none;
+          
+        }
+      
+        @media (max-width: 768px) {
+            .navbar .container {
+                flex-direction: column;
+            }
+            .navbar .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            .navbar .menu li {
+                margin: 10px 0;
+            }
+            .hero {
+                padding: 50px 20px;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .content .row {
+                flex-direction: column;
+            }
+            .content .col {
+                min-width: 100%;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="container">
+    <div class="logo">
+     <img alt="" height="40" src="../pic-folder/girl avatar.jpg" width="40"/>
+     <span>
+      My project
+     </span>
+    </div>
+    <ul class="menu">
+     <li>
+      <a class="active" href="/index.html">
+       Home
+      </a>
+     </li>
+     <li>
+      <a href="./about.html">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="./skill.html">
+       skill
+      </a>
+     </li>
+    
+     <li>
+      <a href="#">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a href="./contact.html">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+  <div class="hero">
+   <h1>
+   5 CLI base project
+   </h1>
+   
+<ul>
+  <li>Atm</li>
+  <li>TodoList</li>
+  <li>Currency Converter</li>
+  <li>Simple calculator</li>
+  <li>Student Managment</li>
+<a href="https://github.com/FarahAlmas/typescript_project.git">Go To GitHub Page</a>
+</ul>
+  
+  </div>
+  <div class="content">
+   <div class="row">
+    <div class="col">
+     <img alt="Image 1" height="200" src="../pic-folder/simple-web-page.jpg" width="300"/>
+     <h3>
+     Basic single web page  
+     </h3>
+    
+    </div>
+    <div class="col">
+     <img alt="Image 2" src="../pic-folder/calulator.jpg"/>
+     <h3>
+      Simple calulator
+     </h3>
+     
+    </div>
+    <div class="col">
+     <img alt="Image 3" height="200" src="../pic-folder/pic-res.png" width="300"/>
+     <h3>
+      Hacthone project 
+     </h3>
+     
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <p>
+    © 2024 farah. All rights reserved.
+   </p>
+  </div>
+ </body>
+</html>
